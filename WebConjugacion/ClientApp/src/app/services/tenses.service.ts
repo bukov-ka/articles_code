@@ -21,7 +21,7 @@ export class TensesService {
       })
     };
 
-    return this.http.get<Mood[]>('filterTree.json', httpOptions)
+    return this.http.get<Mood[]>('../../wwwroot/filterTree.json', httpOptions)
       .pipe(
         catchError(err => {
           return throwError(err);

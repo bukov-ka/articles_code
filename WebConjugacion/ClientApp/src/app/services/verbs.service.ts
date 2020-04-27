@@ -21,7 +21,7 @@ export class VerbsService {
       })
     };
     var fTenses = this.tensesService.filterTenses;
-    return this.http.get<Word[]>('allVerbsForm.json', httpOptions)      
+    return this.http.get<Word[]>('../../wwwroot/allVerbsForm.json', httpOptions)      
       .pipe(
         catchError(err => {
           return throwError(err);
