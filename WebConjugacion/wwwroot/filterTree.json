@@ -1,0 +1,40 @@
+﻿[
+  {
+    "name": "Indicative",
+    "exact_tenses": [
+      {
+        "name": "Present",
+        "exact_name": "presentIndicative"
+      },
+      {
+        "name": "Preterite",
+        "exact_name": "preteritIndicative"
+      },
+      {
+        "name": "Imperfect",
+        "exact_name": "imperfectIndicative"
+      },
+      {
+        "name": "Conditional",
+        "exact_name": "conditionalIndicative"
+      },
+      {
+        "name": "Future",
+        "exact_name": "futureIndicative"
+      }
+    ]
+  },
+  {
+    "name": "Other",
+    "exact_tenses": [
+      {
+        "name": "Gerund",
+        "exact_name": "gerund"
+      },
+      {
+        "name": "Past Participle",
+        "exact_name": "pastParticiple"
+      }
+    ]
+  }
+]

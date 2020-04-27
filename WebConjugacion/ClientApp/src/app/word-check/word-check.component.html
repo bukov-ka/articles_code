@@ -1,0 +1,35 @@
+<div *ngIf="current" class="wordCheckForm">
+  <div>
+    {{this.currentTenseName}}
+  </div>
+  <div>
+    <span>{{current.pronoun}} </span>
+    <span>({{current.infinitive}}) </span>
+  </div>
+  <form novalidate>
+    <div>
+      <mat-form-field>
+        <input type="text" matInput placeholder="Verb"
+               autocomplete="off"
+               [(ngModel)]="variant" [ngModelOptions]="{standalone: true}" />
+      </mat-form-field>
+      <button (click)="checkWord()" mat-flat-button color="primary"
+              [disabled]="showRightAnswer"              
+              >CHECK</button>
+    </div>
+  </form>
+  <p *ngIf="showRightAnswer">
+    Right answer: 
+    <span>{{current.first_part}}</span>
+    <span class="irregular">{{current.irregular_part}}</span>
+    <span>{{current.last_part}}</span>
+  </p>  
+  <table>
+    <tr>
+      <td *ngFor="let item of verbs; index as i"
+          [class.correctAnswer]="item.correct == true"
+          [class.incorrectAnswer]="item.correct == false"
+          >{{i}}</td>
+    </tr>
+  </table>
+</div>

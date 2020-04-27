@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - dotnet restore WebConjugacion/WebConjugacion.sln
+      - dotnet build WebConjugacion/WebConjugacion.sln
+      - npm run build --prefix WebConjugacion/ClientApp/ -- --prod 
+      - dotnet publish WebConjugacion/WebConjugacion.sln -o ./aws-publish -c Release -v n
+artifacts:
+  files:
+    - ./aws-publish/*
+    - ./aws-publish/ClientApp/dist/*
+    - ./aws-publish/wwwroot/*
+
