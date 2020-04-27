@@ -33,6 +33,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="ClientApp\src\assets\allVerbsForm.json" />
+    <Content Include="ClientApp\src\assets\filterTree.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Update="web.Release.config">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Content>

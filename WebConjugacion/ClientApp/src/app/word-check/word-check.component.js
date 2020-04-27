@@ -47,6 +47,8 @@ var WordCheckComponent = /** @class */ (function () {
     });
     Object.defineProperty(WordCheckComponent.prototype, "currentTenseName", {
         get: function () {
+            if (!this.current)
+                return undefined;
             return this.tenses[this.current.tense_key];
         },
         enumerable: false,

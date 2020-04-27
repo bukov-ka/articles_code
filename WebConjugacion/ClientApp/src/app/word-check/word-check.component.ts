@@ -15,6 +15,7 @@ export class WordCheckComponent implements OnInit {
     return this.verbs[this.currentIndex];
   }
   public get currentTenseName(): string {
+    if (!this.current) return undefined;
     return this.tenses[this.current.tense_key];
   }
   currentIndex: number;
