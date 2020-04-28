@@ -23,8 +23,9 @@ bin/
 Bin/
 obj/
 Obj/
-ClientApp/src/app/*/*.js
-ClientApp/src/app/*/*.map
+ClientApp/src/app/**/*.js
+ClientApp/src/app/**/*.map
+
 
 # Visual Studio 2015 cache/options directory
 .vs/
