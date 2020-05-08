@@ -56,13 +56,13 @@ namespace LambdaConjugacion
         /// </summary>
         /// <param name="context"></param>
         /// <returns></returns>
-public object FunctionHandler(string filter, ILambdaContext context)
-{
-    return Data.TenRandomVerbs(string.IsNullOrEmpty(filter) ? null : filter.Split(","));
-}
+        public object FunctionHandler(string filter, ILambdaContext context)
+        {
+            return Data.TenRandomVerbs(string.IsNullOrEmpty(filter) ? null : filter.Split(","));
+        }
         public List<WordViewModel> GetTenVerbs(string filter)
-        {            
-            return 
+        {
+            return Data.TenRandomVerbs(string.IsNullOrEmpty(filter) ? null : filter.Split(","));
         }
     }
 }
